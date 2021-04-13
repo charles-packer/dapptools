@@ -1,15 +1,15 @@
 package main
 
 import (
-  "github.com/ethereum/go-ethereum/common"
-  "github.com/ethereum/go-ethereum/common/math"
-  "github.com/ethereum/go-ethereum/common/hexutil"
-  "github.com/ethereum/go-ethereum/accounts"
-  "github.com/ethereum/go-ethereum/accounts/keystore"
-  "github.com/ethereum/go-ethereum/accounts/usbwallet"
-  "github.com/ethereum/go-ethereum/core/types"
-  "github.com/ethereum/go-ethereum/crypto"
-  "github.com/ethereum/go-ethereum/rlp"
+  "github.com/ethereum/celo-blockchain/common"
+  "github.com/ethereum/celo-blockchain/common/math"
+  "github.com/ethereum/celo-blockchain/common/hexutil"
+  "github.com/ethereum/celo-blockchain/accounts"
+  "github.com/ethereum/celo-blockchain/accounts/keystore"
+  "github.com/ethereum/celo-blockchain/accounts/usbwallet"
+  "github.com/ethereum/celo-blockchain/core/types"
+  "github.com/ethereum/celo-blockchain/crypto"
+  "github.com/ethereum/celo-blockchain/rlp"
 
   "os"
   "fmt"
@@ -23,7 +23,7 @@ import (
   "golang.org/x/crypto/ssh/terminal"
 )
 
-// https://github.com/ethereum/go-ethereum/blob/55599ee95d4151a2502465e0afc7c47bd1acba77/internal/ethapi/api.go#L404
+// https://github.com/ethereum/celo-blockchain/blob/55599ee95d4151a2502465e0afc7c47bd1acba77/internal/ethapi/api.go#L404
 // signHash is a helper function that calculates a hash for the given message that can be
 // safely used to calculate a signature from.
 //
@@ -145,7 +145,7 @@ Scan:
   return acct, passphrase, wallet, nil
 }
 
-// https://github.com/ethereum/go-ethereum/blob/55599ee95d4151a2502465e0afc7c47bd1acba77/internal/ethapi/api.go#L442
+// https://github.com/ethereum/celo-blockchain/blob/55599ee95d4151a2502465e0afc7c47bd1acba77/internal/ethapi/api.go#L442
 func recover(data []byte, sig hexutil.Bytes, noPrefix bool) (common.Address, error) {
   if len(sig) != 65 {
     return common.Address{}, fmt.Errorf("signature must be 65 bytes long")
