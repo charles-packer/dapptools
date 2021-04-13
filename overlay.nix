@@ -132,7 +132,7 @@ in rec {
 
   # We use this to run private testnets without
   # the pesky transaction size limit.
-  go-ethereum-unlimited = super.go-ethereum.overrideAttrs (geth: rec {
+  celo-blockchain-unlimited = super.celo-blockchain.overrideAttrs (geth: rec {
     name = "${geth.pname}-unlimited-${geth.version}";
     preConfigure = ''
       # Huge transaction calldata
