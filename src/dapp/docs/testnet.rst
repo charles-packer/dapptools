@@ -11,7 +11,7 @@ You can quickly spin up an ethereum testnet to experiment with your contracts or
 
     $ dapp testnet
 
-spins up a `geth <https://github.com/ethereum/go-ethereum/>`_ testnet at ``http://127.0.0.1:8545`` with instant mining and keeps stores the data at ``~/.dapp/testnet/8545``. If you want the chain to be saved after you are done, use the flag ``-save=name``. Otherwise, the directory will be removed when the process terminates.
+spins up a `geth <https://github.com/celo-org/celo-blockchain/>`_ testnet at ``http://127.0.0.1:8545`` with instant mining and keeps stores the data at ``~/.dapp/testnet/8545``. If you want the chain to be saved after you are done, use the flag ``-save=name``. Otherwise, the directory will be removed when the process terminates.
 
 Once the testnet is up and running, you can interact with it through your favorite tool. We like to use `seth <https://dapp.tools/seth/>`_ for slicing and dicing transactions, querying the blockchain, converting between data formats, performing remote calls, and other everyday tasks.
 

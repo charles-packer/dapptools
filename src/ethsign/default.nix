@@ -10,7 +10,7 @@ buildGoPackage rec {
 
   extraSrcs = [
     {
-      goPackagePath = "github.com/ethereum/go-ethereum";
+      goPackagePath = "github.com/celo-org/celo-blockchain";
       src = go-ethereum.src;
     }
     {
