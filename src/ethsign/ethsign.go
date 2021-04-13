@@ -341,6 +341,10 @@ func main() {
         value := math.MustParseBig256(c.String("value"))
         chainID := math.MustParseBig256(c.String("chain-id"))
 
+		feecurrency := math.MustParseBig256(c.String("feecurrency"))
+        gatewayfeerecipient := math.MustParseBig256(c.String("gatewayfeerecipient"))
+        gatewayfee := math.MustParseBig256(c.String("gatewayfee"))
+
         dataString := c.String("data")
         if dataString == "" {
           dataString = "0x"
@@ -353,7 +357,7 @@ func main() {
 
         var tx *types.Transaction
         if create {
-          tx = types.NewContractCreation(nonce, value, gasLimit, gasPrice, data)
+          tx = types.NewContractCreation(nonce, value, gasLimit, gasPrice, data,feecurrency,gatewayfeerecipient,gatewayfee)
         } else {
           tx = types.NewTransaction(nonce, to, value, gasLimit, gasPrice, data)
         }
