@@ -1,15 +1,15 @@
 package main
 
 import (
-  "github.com/ethereum/celo-blockchain/common"
-  "github.com/ethereum/celo-blockchain/common/math"
-  "github.com/ethereum/celo-blockchain/common/hexutil"
-  "github.com/ethereum/celo-blockchain/accounts"
-  "github.com/ethereum/celo-blockchain/accounts/keystore"
-  "github.com/ethereum/celo-blockchain/accounts/usbwallet"
-  "github.com/ethereum/celo-blockchain/core/types"
-  "github.com/ethereum/celo-blockchain/crypto"
-  "github.com/ethereum/celo-blockchain/rlp"
+  "github.com/celo-org/celo-blockchain/common"
+  "github.com/celo-org/celo-blockchain/common/math"
+  "github.com/celo-org/celo-blockchain/common/hexutil"
+  "github.com/celo-org/celo-blockchain/accounts"
+  "github.com/celo-org/celo-blockchain/accounts/keystore"
+  "github.com/celo-org/celo-blockchain/accounts/usbwallet"
+  "github.com/celo-org/celo-blockchain/core/types"
+  "github.com/celo-org/celo-blockchain/crypto"
+  "github.com/celo-org/celo-blockchain/rlp"
 
   "os"
   "fmt"
