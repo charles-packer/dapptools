@@ -4,7 +4,7 @@ buildGoPackage rec {
   name = "ethsign-${version}";
   version = "0.15.0";
 
-  goPackagePath = "github.com/dapphub/ethsign";
+  goPackagePath = "github.com/charles-packer/dapptools/tree/master/src/ethsign";
   hardeningDisable = ["fortify"];
   src = ./.;
 
