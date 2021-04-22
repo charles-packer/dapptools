@@ -130,26 +130,6 @@ in rec {
 
   token = self.callPackage (import ./src/token) {};
 
-  # We use this to run private testnets without
-  # the pesky transaction size limit.
-  celo-blockchain = super.celo-blockchain.overrideAttrs (geth: rec {
-    name = "${geth.pname}-${geth.version}";
-    preConfigure = ''
-      # Huge transaction calldata
-      substituteInPlace core/tx_pool.go --replace 'return ErrOversizedData' ""
-
-      # Huge contracts
-      substituteInPlace params/protocol_params.go --replace \
-        'MaxCodeSize = 24576' \
-        'MaxCodeSize = 1000000'
-
-      # Huge block gas limit in --dev mode
-      substituteInPlace core/genesis.go --replace \
-        'GasLimit:   6283185,' \
-        'GasLimit:   0xffffffffffffffff,'
-    '';
-  });
-
   qrtx = self.bashScript {
     name = "qrtx";
     version = "0";

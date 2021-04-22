@@ -36,9 +36,7 @@ let
     inherit dapp-tests;
     inherit ethsign;
     inherit evmdis;
-    inherit go-ethereum-unlimited;
     inherit go-ethereum;
-    inherit celo-blockchain-unlimited;
     inherit celo-blockchain;
     inherit hevm;
     inherit qrtx-term;
