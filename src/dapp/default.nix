@@ -4,7 +4,7 @@
 
 stdenv.mkDerivation rec {
   name = "dapp-${version}";
-  version = "0.28.0";
+  version = "0.28.92";
   src = ./.;
 
   nativeBuildInputs = [makeWrapper shellcheck coreutils nodejs];
@@ -30,7 +30,7 @@ stdenv.mkDerivation rec {
 
   meta = {
     description = "Simple tool for creating Ethereum-based dapps";
-    homepage = https://github.com/dapphub/dapptools/src/dapp/;
+    homepage = https://github.com/charles-packer/dapptools/src/dapp/;
     maintainers = [stdenv.lib.maintainers.dbrock];
     license = lib.licenses.gpl3;
     inherit version;
