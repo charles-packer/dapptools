@@ -45,7 +45,7 @@ buildGoPackage rec {
   ];
 
   meta = with stdenv.lib; {
-    homepage = http://github.com/dapphub/dapptools;
+    homepage = https://github.com/charles-packer/dapptools;
     description = "Make raw signed Ethereum transactions";
     license = [licenses.agpl3];
   };
