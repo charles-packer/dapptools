@@ -132,8 +132,8 @@ in rec {
 
   # We use this to run private testnets without
   # the pesky transaction size limit.
-  celo-blockchain-unlimited = super.celo-blockchain.overrideAttrs (geth: rec {
-    name = "${geth.pname}-unlimited-${geth.version}";
+  celo-blockchain = super.celo-blockchain.overrideAttrs (geth: rec {
+    name = "${geth.pname}-${geth.version}";
     preConfigure = ''
       # Huge transaction calldata
       substituteInPlace core/tx_pool.go --replace 'return ErrOversizedData' ""
