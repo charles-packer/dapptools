@@ -1,4 +1,4 @@
-{ stdenv, buildGoPackage, fetchFromGitHub, fetchgit, go-ethereum, clang, celo-blockchain}:
+{ stdenv, buildGoPackage, fetchFromGitHub, fetchgit, go-ethereum, clang, celo-blockchain }:
 
 buildGoPackage rec {
   name = "ethsign-${version}";
@@ -9,10 +9,6 @@ buildGoPackage rec {
   src = ./.;
 
   extraSrcs = [
-    {
-      goPackagePath = "github.com/ethereum/go-ethereum";
-      src = go-ethereum.src;
-    }
     {
       goPackagePath = "github.com/celo-org/celo-blockchain";
       src = celo-blockchain.src;
