@@ -1,4 +1,4 @@
-{ stdenv, buildGoPackage, fetchFromGitHub, fetchgit, go-ethereum, clang }:
+{ stdenv, buildGoPackage, fetchFromGitHub, fetchgit, go-ethereum, celo-blockchain, clang }:
 
 buildGoPackage rec {
   name = "ethsign-${version}";
@@ -12,6 +12,10 @@ buildGoPackage rec {
     {
       goPackagePath = "github.com/ethereum/go-ethereum";
       src = go-ethereum.src;
+    }
+    {
+      goPackagePath = "github.com/celo-org/celo-blockchain";
+      src = celo-blockchain.src;
     }
     {
       goPackagePath = "gopkg.in/urfave/cli.v1";
