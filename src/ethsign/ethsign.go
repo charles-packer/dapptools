@@ -7,7 +7,7 @@ import (
   "github.com/ethereum/go-ethereum/accounts"
   "github.com/ethereum/go-ethereum/accounts/keystore"
   "github.com/ethereum/go-ethereum/accounts/usbwallet"
-  "github.com/celo-org/celo-blockchain/core/types"
+  "https://github.com/celo-org/celo-blockchain/tree/master/core/types"
   "github.com/ethereum/go-ethereum/crypto"
   "github.com/ethereum/go-ethereum/rlp"
 
