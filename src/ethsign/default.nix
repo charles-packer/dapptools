@@ -1,4 +1,4 @@
-{ stdenv, buildGoPackage, fetchFromGitHub, fetchgit, go-ethereum, clang, celo-blockchain}:
+{ stdenv, buildGoPackage, fetchFromGitHub, fetchgit, go-ethereum, clang}:
 
 buildGoPackage rec {
   name = "ethsign-${version}";
