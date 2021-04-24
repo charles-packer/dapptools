@@ -95,6 +95,15 @@ buildGoPackage rec {
       };
     }
     {
+      goPackagePath = "github.com/steakknife/hamming";
+      src = fetchFromGitHub {
+        owner = "steakknife";
+        repo = "hamming";
+        rev = "0.2.5";
+        sha256 = "07936py66j8663d4q32x40prfz78janwzcf2rpny32ivis0ycn3r";
+      };
+    }
+    {
       goPackagePath = "gopkg.in/urfave/cli.v1";
       src = fetchFromGitHub {
         owner = "urfave";
