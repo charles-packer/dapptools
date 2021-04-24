@@ -128,7 +128,7 @@ buildGoPackage rec {
         owner = "karalabe";
         repo = "usb";
         rev = "911d15fe12a9c411cf5d0dd5635231c759399bed";
-        sha256 = "1cz76z2l13pgckc301jalw9z3xnabb96ly3dba9nf6w48xbhvr7v";
+        sha256 = "0asd5fz2rhzkjmd8wjgmla5qmqyz4jaa6qf0n2ycia16jsck6wc2";
       };
     }
 
