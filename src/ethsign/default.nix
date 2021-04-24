@@ -131,6 +131,16 @@ buildGoPackage rec {
         sha256 = "0asd5fz2rhzkjmd8wjgmla5qmqyz4jaa6qf0n2ycia16jsck6wc2";
       };
     }
+    {
+      goPackagePath = "github.com/pborman/uuid";
+      src = fetchFromGitHub {
+        owner = "pborman";
+        repo = "uuid";
+        rev = "v1.2.1";
+        sha256 = "0asd5fz2rhzkjmd8wjgmla5qmqyz4jaa6qf0n2ycia16jsck6wc2";
+      };
+    }
+
 
     {
       goPackagePath = "gopkg.in/urfave/cli.v1";
