@@ -119,7 +119,7 @@ buildGoPackage rec {
         owner = "golang";
         repo = "protobuf";
         rev = "v1.5.2";
-        sha256 = "1s6swyllznlvw0jqkcrc622p03srp5299bbaddmy75f4hpxykpry";
+        sha256 = "1mh5fyim42dn821nsd3afnmgscrzzhn3h8rag635d2jnr23r1zhk";
       };
     }
     {
