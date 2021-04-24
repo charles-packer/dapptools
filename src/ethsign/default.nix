@@ -83,7 +83,7 @@ buildGoPackage rec {
         owner = "golang";
         repo = "snappy";
         rev = "v0.0.3";
-        sha256 = "195dk1q9m0xp50q5l2kb7i3a6795lib6vfm9fd0mvbab2ibck3l0";
+        sha256 = "1dc8sdca0nrqb8wri91mi2xcjm16wyawm4y0fwc5gp24ahjbrg7g";
       };
     }
 
