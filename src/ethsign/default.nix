@@ -110,7 +110,7 @@ buildGoPackage rec {
         owner = "deckarep";
         repo = "golang-set";
         rev = "v1.7.1";
-        sha256 = "0mvzslgaxk0jha4qgsph2hc51j4a85sxcxrxp9i4zbrvqk6q4m6j";
+        sha256 = "0y64c0p6a7ww5jp6adm6fm97vsni86njw8wkwxfmciy466vhl0lf";
       };
     }
 
