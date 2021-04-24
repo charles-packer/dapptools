@@ -41,6 +41,15 @@ buildGoPackage rec {
       };
     }
     {
+      goPackagePath = "github.com/celo-org/celo-bls-go";
+      src = fetchFromGitHub {
+        owner = "celo-org";
+        repo = "celo-bls-go";
+        rev = "v0.2.5";
+        sha256 = "0qhmn83cny1299rli2x8n2rw844gfwscsldrnl107vi8mv88r0xw";
+      };
+    }
+    {
       goPackagePath = "gopkg.in/urfave/cli.v1";
       src = fetchFromGitHub {
         owner = "urfave";
