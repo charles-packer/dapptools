@@ -50,6 +50,15 @@ buildGoPackage rec {
       };
     }
     {
+      goPackagePath = "github.com/cespare/xxhash";
+      src = fetchFromGitHub {
+        owner = "cespare";
+        repo = "xxhash";
+        rev = "v2.0.0";
+        sha256 = "1g12i4n0gisc7v4jhfbdgbh7p05wksxy6xlqp0268vxvjlpsmjkg";
+      };
+    }
+    {
       goPackagePath = "gopkg.in/urfave/cli.v1";
       src = fetchFromGitHub {
         owner = "urfave";
