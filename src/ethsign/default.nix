@@ -58,7 +58,6 @@ buildGoPackage rec {
         sha256 = "1cpxfjamywjvm1530cdg7li60yabgby1a4ispina1a39h1f3c92k";
       };
     }
-
     {
       goPackagePath = "github.com/elastic/gosigar";
       src = fetchFromGitHub {
@@ -68,7 +67,17 @@ buildGoPackage rec {
         sha256 = "1l4sfcv81sqf6yx4jdbf9civpp96h8mpf39rxf03ydlg7bc6djnf";
       };
     }
-    
+
+    {
+      goPackagePath = "github.com/go-stack/stack";
+      src = fetchFromGitHub {
+        owner = "go-stack";
+        repo = "stack";
+        rev = "v1.8.0";
+        sha256 = "10mnfn8xjbi1i6kgbl5b86rps9w27gwc495w7rrrx8ig1s1hqfpd";
+      };
+    }
+
     {
       goPackagePath = "gopkg.in/urfave/cli.v1";
       src = fetchFromGitHub {
