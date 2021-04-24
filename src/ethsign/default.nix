@@ -74,7 +74,7 @@ buildGoPackage rec {
         owner = "go-stack";
         repo = "stack";
         rev = "v1.8.0";
-        sha256 = "10mnfn8xjbi1i6kgbl5b86rps9w27gwc495w7rrrx8ig1s1hqfpd";
+        sha256 = "0wk25751ryyvxclyp8jdk5c3ar0cmfr8lrjb66qbg4808x66b96v";
       };
     }
 
