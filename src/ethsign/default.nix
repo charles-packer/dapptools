@@ -28,7 +28,7 @@ buildGoPackage rec {
         owner = "VictoriaMetrics";
         repo = "fastcache";
         rev = "v1.5.7";
-        sha256 = "0g89p0qn7vnx97gacml3lnkx43xjac5b50iph4337mymvp0jnscn";
+        sha256 = "19fsx8ha2kdjbsinlllz70fj96z6xhvn38x8qrmml0abmsf5z60k";
       };
     }
     {
