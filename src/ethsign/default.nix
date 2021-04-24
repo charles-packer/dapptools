@@ -37,7 +37,7 @@ buildGoPackage rec {
         owner = "aristanetworks";
         repo = "goarista";
         rev = "ockafka-v0.0.5";
-        sha256 = "1rsikyc6sbgvirml17sjagx1k4vv2hngy44fhah4791pbc2vz3hv";
+        sha256 = "0qhmn83cny1299rli2x8n2rw844gfwscsldrnl107vi8mv88r0xw";
       };
     }
     {
