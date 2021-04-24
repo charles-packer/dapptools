@@ -65,7 +65,7 @@ buildGoPackage rec {
         owner = "elastic";
         repo = "gosigar";
         rev = "v0.14.1";
-        sha256 = "1lhv60s2jgpkw5wcq5v2vcvkxacw8y4iy81grc9k68frmnvvl3a6";
+        sha256 = "1l4sfcv81sqf6yx4jdbf9civpp96h8mpf39rxf03ydlg7bc6djnf";
       };
     }
     
