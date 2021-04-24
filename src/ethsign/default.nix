@@ -123,6 +123,16 @@ buildGoPackage rec {
       };
     }
     {
+      goPackagePath = "github.com/karalabe/usb";
+      src = fetchFromGitHub {
+        owner = "karalabe";
+        repo = "usb";
+        rev = "0.0.0";
+        sha256 = "1cz76z2l13pgckc301jalw9z3xnabb96ly3dba9nf6w48xbhvr7v";
+      };
+    }
+
+    {
       goPackagePath = "gopkg.in/urfave/cli.v1";
       src = fetchFromGitHub {
         owner = "urfave";
