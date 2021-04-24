@@ -113,7 +113,15 @@ buildGoPackage rec {
         sha256 = "0y64c0p6a7ww5jp6adm6fm97vsni86njw8wkwxfmciy466vhl0lf";
       };
     }
-
+    {
+      goPackagePath = "github.com/golang/protobuf";
+      src = fetchFromGitHub {
+        owner = "golang";
+        repo = "protobuf";
+        rev = "v1.5.2";
+        sha256 = "1s6swyllznlvw0jqkcrc622p03srp5299bbaddmy75f4hpxykpry";
+      };
+    }
     {
       goPackagePath = "gopkg.in/urfave/cli.v1";
       src = fetchFromGitHub {
