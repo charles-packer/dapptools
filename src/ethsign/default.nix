@@ -137,7 +137,7 @@ buildGoPackage rec {
         owner = "pborman";
         repo = "uuid";
         rev = "v1.2.1";
-        sha256 = "0asd5fz2rhzkjmd8wjgmla5qmqyz4jaa6qf0n2ycia16jsck6wc2";
+        sha256 = "16khpkvlryzfaflrswcbkxpzrnhiwv1hxl0vzffqhd8q4n3i5z8d";
       };
     }
 
