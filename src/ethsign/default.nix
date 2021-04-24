@@ -19,7 +19,7 @@ buildGoPackage rec {
         owner = "celo-org";
         repo = "celo-blockchain";
         rev = "v1.3.0";
-        sha256 = "1k2mqby72h9h2f8l3db67xxmnm8fljy0bjc5jzqcm248sixzkxsg";
+        sha256 = "0lwli3rj91zvia4bb09s6cix4wimy5x7dk1qwl221k266x23h89l";
       };
     }
     {
