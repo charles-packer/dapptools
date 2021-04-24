@@ -127,7 +127,7 @@ buildGoPackage rec {
       src = fetchFromGitHub {
         owner = "karalabe";
         repo = "usb";
-        rev = "0.0.0";
+        rev = "911d15fe12a9c411cf5d0dd5635231c759399bed";
         sha256 = "1cz76z2l13pgckc301jalw9z3xnabb96ly3dba9nf6w48xbhvr7v";
       };
     }
