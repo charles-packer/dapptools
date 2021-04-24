@@ -76,7 +76,6 @@ buildGoPackage rec {
         sha256 = "0wk25751ryyvxclyp8jdk5c3ar0cmfr8lrjb66qbg4808x66b96v";
       };
     }
-
     {
       goPackagePath = "github.com/golang/snappy";
       src = fetchFromGitHub {
@@ -86,7 +85,15 @@ buildGoPackage rec {
         sha256 = "1dc8sdca0nrqb8wri91mi2xcjm16wyawm4y0fwc5gp24ahjbrg7g";
       };
     }
-
+    {
+      goPackagePath = "github.com/steakknife/bloomfilter";
+      src = fetchFromGitHub {
+        owner = "steakknife";
+        repo = "bloomfilter";
+        rev = "v1.0.2";
+        sha256 = "0w610j8h1fc39612mcqw4zwzrsfvf2ggckqvfv5p1plnx3ndjvng";
+      };
+    }
     {
       goPackagePath = "gopkg.in/urfave/cli.v1";
       src = fetchFromGitHub {
