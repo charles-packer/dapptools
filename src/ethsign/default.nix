@@ -58,6 +58,17 @@ buildGoPackage rec {
         sha256 = "1cpxfjamywjvm1530cdg7li60yabgby1a4ispina1a39h1f3c92k";
       };
     }
+
+    {
+      goPackagePath = "github.com/elastic/gosigar";
+      src = fetchFromGitHub {
+        owner = "elastic";
+        repo = "gosigar";
+        rev = "v0.14.1";
+        sha256 = "1lhv60s2jgpkw5wcq5v2vcvkxacw8y4iy81grc9k68frmnvvl3a6";
+      };
+    }
+    
     {
       goPackagePath = "gopkg.in/urfave/cli.v1";
       src = fetchFromGitHub {
