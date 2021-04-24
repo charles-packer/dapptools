@@ -100,7 +100,7 @@ buildGoPackage rec {
         owner = "steakknife";
         repo = "hamming";
         rev = "0.2.5";
-        sha256 = "07936py66j8663d4q32x40prfz78janwzcf2rpny32ivis0ycn3r";
+        sha256 = "1z6kpqfywhqzh9ayzyry5bh6qr08c6yagb20p1py5299h87iawjw";
       };
     }
     {
