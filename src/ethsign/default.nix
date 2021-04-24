@@ -23,10 +23,10 @@ buildGoPackage rec {
       };
     }
     {
-      goPackagePath = "github.com/VictoriaMetrics/fastcache/";
+      goPackagePath = "github.com/VictoriaMetrics/fastcache";
       src = fetchFromGitHub {
         owner = "VictoriaMetrics";
-        repo = "celo-blockchain";
+        repo = "fastcache";
         rev = "v1.5.7";
         sha256 = "0g89p0qn7vnx97gacml3lnkx43xjac5b50iph4337mymvp0jnscn";
       };
