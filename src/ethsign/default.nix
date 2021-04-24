@@ -37,7 +37,7 @@ buildGoPackage rec {
         owner = "aristanetworks";
         repo = "goarista";
         rev = "v0.0.0";
-        sha256 = "19fsx8ha2kdjbsinlllz70fj96z6xhvn38x8qrmml0abmsf5z60k";
+        sha256 = "1rsikyc6sbgvirml17sjagx1k4vv2hngy44fhah4791pbc2vz3hv";
       };
     }
     {
