@@ -32,6 +32,15 @@ buildGoPackage rec {
       };
     }
     {
+      goPackagePath = "github.com/aristanetworks/goarista";
+      src = fetchFromGitHub {
+        owner = "aristanetworks";
+        repo = "goarista";
+        rev = "v0.0.0";
+        sha256 = "19fsx8ha2kdjbsinlllz70fj96z6xhvn38x8qrmml0abmsf5z60k";
+      };
+    }
+    {
       goPackagePath = "gopkg.in/urfave/cli.v1";
       src = fetchFromGitHub {
         owner = "urfave";
