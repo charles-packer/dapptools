@@ -140,7 +140,15 @@ buildGoPackage rec {
         sha256 = "0n1ng6396zgm1iggzp43h554wwp32iwr62qqfy0zl4jnk2dg41lv";
       };
     }
-
+    {
+      goPackagePath = "github.com/google/uuid";
+      src = fetchFromGitHub {
+        owner = "google";
+        repo = "uuid";
+        rev = "v1.2.0";
+        sha256 = "0s5sry45j0ffmjgnh8pw1ykislwliijhcm52i5m1pl1b515qkpmw";
+      };
+    }
 
     {
       goPackagePath = "gopkg.in/urfave/cli.v1";
