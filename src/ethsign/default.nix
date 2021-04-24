@@ -103,6 +103,17 @@ buildGoPackage rec {
         sha256 = "1z6kpqfywhqzh9ayzyry5bh6qr08c6yagb20p1py5299h87iawjw";
       };
     }
+
+    {
+      goPackagePath = "github.com/deckarep/golang-set";
+      src = fetchFromGitHub {
+        owner = "deckarep";
+        repo = "golang-set";
+        rev = "v1.7.1";
+        sha256 = "0mvzslgaxk0jha4qgsph2hc51j4a85sxcxrxp9i4zbrvqk6q4m6j";
+      };
+    }
+
     {
       goPackagePath = "gopkg.in/urfave/cli.v1";
       src = fetchFromGitHub {
