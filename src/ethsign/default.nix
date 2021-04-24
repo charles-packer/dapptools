@@ -146,7 +146,7 @@ buildGoPackage rec {
         owner = "google";
         repo = "uuid";
         rev = "v1.2.0";
-        sha256 = "0s5sry45j0ffmjgnh8pw1ykislwliijhcm52i5m1pl1b515qkpmw";
+        sha256 = "08wqig98w23cg2ngjijhgm6s0mdayb95awa3cn3bs69lg20gryac";
       };
     }
 
