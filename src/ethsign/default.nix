@@ -67,7 +67,6 @@ buildGoPackage rec {
         sha256 = "1l4sfcv81sqf6yx4jdbf9civpp96h8mpf39rxf03ydlg7bc6djnf";
       };
     }
-
     {
       goPackagePath = "github.com/go-stack/stack";
       src = fetchFromGitHub {
@@ -75,6 +74,16 @@ buildGoPackage rec {
         repo = "stack";
         rev = "v1.8.0";
         sha256 = "0wk25751ryyvxclyp8jdk5c3ar0cmfr8lrjb66qbg4808x66b96v";
+      };
+    }
+
+    {
+      goPackagePath = "github.com/golang/snappy";
+      src = fetchFromGitHub {
+        owner = "golang";
+        repo = "snappy";
+        rev = "v0.0.3";
+        sha256 = "195dk1q9m0xp50q5l2kb7i3a6795lib6vfm9fd0mvbab2ibck3l0";
       };
     }
 
