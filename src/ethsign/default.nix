@@ -55,7 +55,7 @@ buildGoPackage rec {
         owner = "cespare";
         repo = "xxhash";
         rev = "v2.0.0";
-        sha256 = "1g12i4n0gisc7v4jhfbdgbh7p05wksxy6xlqp0268vxvjlpsmjkg";
+        sha256 = "1cpxfjamywjvm1530cdg7li60yabgby1a4ispina1a39h1f3c92k";
       };
     }
     {
