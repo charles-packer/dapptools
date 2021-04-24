@@ -46,7 +46,7 @@ buildGoPackage rec {
         owner = "celo-org";
         repo = "celo-bls-go";
         rev = "v0.2.5";
-        sha256 = "0qid48pyzxbcgzsld1lwmcarnjw9y4rk2j84s29y9wmryiqk8493";
+        sha256 = "02a7nrww3a901gj7v3i8nwzznq3k0b95zrmn66lh5rcidjx2by5n";
       };
     }
     {
