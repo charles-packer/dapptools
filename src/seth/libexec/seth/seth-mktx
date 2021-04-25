@@ -21,6 +21,9 @@ args=(
   --gas-limit "${ETH_GAS:-200000}"
   --value "$value"
   --data "${data:-0x}"
+  --gatewayfeerecipient "nil"
+  --feecurrency "nil"
+  --gatewayfee "0"
 
 )
 
