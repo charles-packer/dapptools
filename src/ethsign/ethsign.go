@@ -362,9 +362,9 @@ func main() {
         value := math.MustParseBig256(c.String("value"))
         chainID := math.MustParseBig256(c.String("chain-id"))
 
-		feecurrency := common.HexToAddress("0x88f24de331525cf6cfd7455eb96a9e4d49b7f292")
-        gatewayfeerecipient := common.HexToAddress("0xe7c7177b6e5418f27e435f96dbf3f7edae41c133")
-        gatewayfee := math.MustParseBig256("0")
+		// feecurrency := common.HexToAddress("0x88f24de331525cf6cfd7455eb96a9e4d49b7f292")
+        // gatewayfeerecipient := common.HexToAddress("0xe7c7177b6e5418f27e435f96dbf3f7edae41c133")
+        // gatewayfee := math.MustParseBig256("0")
 
         dataString := c.String("data")
         if dataString == "" {
