@@ -149,7 +149,15 @@ buildGoPackage rec {
         sha256 = "08wqig98w23cg2ngjijhgm6s0mdayb95awa3cn3bs69lg20gryac";
       };
     }
-
+    {
+      goPackagePath = "github.com/rjeczalik/notify";
+      src = fetchFromGitHub {
+        owner = "rjeczalik";
+        repo = "notify";
+        rev = "v0.9.2";
+        sha256 = "1y5mdz8dxhd0z95nzlsr3ryc9sxaih4hk6rgfwywsigibwr5jcdb";
+      };
+    }
     {
       goPackagePath = "gopkg.in/urfave/cli.v1";
       src = fetchFromGitHub {
