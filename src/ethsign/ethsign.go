@@ -361,9 +361,9 @@ func main() {
         value := math.MustParseBig256(c.String("value"))
         chainID := math.MustParseBig256(c.String("chain-id"))
 
-		feecurrency := math.MustParseBig256(c.String("feecurrency"))
-        gatewayfeerecipient := math.MustParseBig256(c.String("gatewayfeerecipient"))
-        gatewayfee := math.MustParseBig256(c.String("gatewayfee"))
+		// feecurrency := math.MustParseBig256(c.String("feecurrency"))
+        // gatewayfeerecipient := math.MustParseBig256(c.String("gatewayfeerecipient"))
+        // gatewayfee := math.MustParseBig256(c.String("gatewayfee"))
 
         dataString := c.String("data")
         if dataString == "" {
