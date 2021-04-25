@@ -91,7 +91,7 @@ buildGoPackage rec {
         owner = "holiman";
         repo = "bloomfilter";
         rev = "v2.0.3";
-        sha256 = "0v4z7x4dx7d0xzi7bwbl4iz36svckv4ljhbavqf6g8k9jldfhdbx";
+        sha256 = "16dlc7q0w99nsqjh1ibv54rmmdl2kisbh5z57j963zlwbg43byjz";
       };
     }
     {
