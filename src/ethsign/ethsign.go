@@ -1,25 +1,25 @@
 package main
 
 import (
-  "github.com/celo-org/celo-blockchain/common"
-  "github.com/celo-org/celo-blockchain/common/math"
-  "github.com/celo-org/celo-blockchain/common/hexutil"
-  "github.com/celo-org/celo-blockchain/accounts"
-  "github.com/celo-org/celo-blockchain/accounts/keystore"
-  "github.com/celo-org/celo-blockchain/accounts/usbwallet"
-  "github.com/celo-org/celo-blockchain/core/types"
-  "github.com/celo-org/celo-blockchain/crypto"
-  "github.com/celo-org/celo-blockchain/rlp"
-
-//   "github.com/ethereum/go-ethereum/common"
-//   "github.com/ethereum/go-ethereum/common/math"
-//   "github.com/ethereum/go-ethereum/common/hexutil"
-//   "github.com/ethereum/go-ethereum/accounts"
-//   "github.com/ethereum/go-ethereum/accounts/keystore"
-//   "github.com/ethereum/go-ethereum/accounts/usbwallet"
+//   "github.com/celo-org/celo-blockchain/common"
+//   "github.com/celo-org/celo-blockchain/common/math"
+//   "github.com/celo-org/celo-blockchain/common/hexutil"
+//   "github.com/celo-org/celo-blockchain/accounts"
+//   "github.com/celo-org/celo-blockchain/accounts/keystore"
+//   "github.com/celo-org/celo-blockchain/accounts/usbwallet"
 //   "github.com/celo-org/celo-blockchain/core/types"
-//   "github.com/ethereum/go-ethereum/crypto"
-//   "github.com/ethereum/go-ethereum/rlp"
+//   "github.com/celo-org/celo-blockchain/crypto"
+//   "github.com/celo-org/celo-blockchain/rlp"
+
+  "github.com/ethereum/go-ethereum/common"
+  "github.com/ethereum/go-ethereum/common/math"
+  "github.com/ethereum/go-ethereum/common/hexutil"
+  "github.com/ethereum/go-ethereum/accounts"
+  "github.com/ethereum/go-ethereum/accounts/keystore"
+  "github.com/ethereum/go-ethereum/accounts/usbwallet"
+  "github.com/celo-org/celo-blockchain/core/types"
+  "github.com/ethereum/go-ethereum/crypto"
+  "github.com/ethereum/go-ethereum/rlp"
 
   "os"
   "fmt"
@@ -367,9 +367,9 @@ func main() {
 
         var tx *types.Transaction
         if create {
-          tx = types.NewContractCreation(nonce, value, gasLimit, gasPrice, "0x88f24de331525cf6cfd7455eb96a9e4d49b7f292", "0xe7c7177b6e5418f27e435f96dbf3f7edae41c133", "0x0", data)
+          tx = types.NewContractCreationEthCompatible(nonce, value, gasLimit, gasPrice, data)
         } else {
-          tx = types.NewTransaction(nonce, to, value, gasLimit, gasPrice, "0x88f24de331525cf6cfd7455eb96a9e4d49b7f292", "0xe7c7177b6e5418f27e435f96dbf3f7edae41c133", "0x0", data)
+          tx = types.NewTransactionEthCompatible(nonce, to, value, gasLimit, gasPrice, "0x88f24de331525cf6cfd7455eb96a9e4d49b7f292", "0xe7c7177b6e5418f27e435f96dbf3f7edae41c133", "0x0", data)
         }
 
         signed, err := wallet.SignTxWithPassphrase(*acct, passphrase, tx, chainID)
