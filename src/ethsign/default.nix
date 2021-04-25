@@ -11,6 +11,10 @@ buildGoPackage rec {
   extraSrcs = [
     {
       goPackagePath = "github.com/ethereum/go-ethereum";
+      src = go-ethereum.src;
+    }
+    {
+      goPackagePath = "github.com/celo-org/celo-blockchain";
       src = fetchFromGitHub {
         owner = "celo-org";
         repo = "celo-blockchain";
