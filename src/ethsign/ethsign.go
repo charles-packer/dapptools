@@ -1,24 +1,16 @@
 package main
 
 import (
-//   "github.com/celo-org/celo-blockchain/common"
-//   "github.com/celo-org/celo-blockchain/common/math"
-//   "github.com/celo-org/celo-blockchain/common/hexutil"
-//   "github.com/celo-org/celo-blockchain/accounts"
-//   "github.com/celo-org/celo-blockchain/accounts/keystore"
-//   "github.com/celo-org/celo-blockchain/accounts/usbwallet"
-//   "github.com/celo-org/celo-blockchain/core/types"
-//   "github.com/celo-org/celo-blockchain/crypto"
-//   "github.com/celo-org/celo-blockchain/rlp"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/math"
-	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/ethereum/go-ethereum/accounts"
-	"github.com/ethereum/go-ethereum/accounts/keystore"
-	"github.com/ethereum/go-ethereum/accounts/usbwallet"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/rlp"
+  "github.com/celo-org/celo-blockchain/common"
+  "github.com/celo-org/celo-blockchain/common/math"
+  "github.com/celo-org/celo-blockchain/common/hexutil"
+  "github.com/celo-org/celo-blockchain/accounts"
+  "github.com/celo-org/celo-blockchain/accounts/keystore"
+  "github.com/celo-org/celo-blockchain/accounts/usbwallet"
+  "github.com/celo-org/celo-blockchain/core/types"
+  "github.com/celo-org/celo-blockchain/crypto"
+  "github.com/celo-org/celo-blockchain/rlp"
+
   "os"
   "fmt"
   "io/ioutil"
@@ -349,9 +341,9 @@ func main() {
         value := math.MustParseBig256(c.String("value"))
         chainID := math.MustParseBig256(c.String("chain-id"))
 
-		// feecurrency := math.MustParseBig256(c.String("feecurrency"))
-        // gatewayfeerecipient := math.MustParseBig256(c.String("gatewayfeerecipient"))
-        // gatewayfee := math.MustParseBig256(c.String("gatewayfee"))
+		feecurrency := math.MustParseBig256(c.String("feecurrency"))
+        gatewayfeerecipient := math.MustParseBig256(c.String("gatewayfeerecipient"))
+        gatewayfee := math.MustParseBig256(c.String("gatewayfee"))
 
         dataString := c.String("data")
         if dataString == "" {
@@ -365,9 +357,9 @@ func main() {
 
         var tx *types.Transaction
         if create {
-          tx = types.NewContractCreation(nonce, value, gasLimit, gasPrice, data)
+          tx = types.NewContractCreation(nonce, value, gasLimit, gasPrice, data,feecurrency,gatewayfeerecipient,gatewayfee)
         } else {
-          tx = types.NewTransaction(nonce, to, value, gasLimit, gasPrice, data)
+          tx = types.NewTransaction(nonce, to, value, gasLimit, gasPrice, data,feecurrency,gatewayfeerecipient,gatewayfee)
         }
 
         signed, err := wallet.SignTxWithPassphrase(*acct, passphrase, tx, chainID)
