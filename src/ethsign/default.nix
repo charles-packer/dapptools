@@ -155,7 +155,7 @@ buildGoPackage rec {
         owner = "rjeczalik";
         repo = "notify";
         rev = "v0.9.2";
-        sha256 = "1y5mdz8dxhd0z95nzlsr3ryc9sxaih4hk6rgfwywsigibwr5jcdb";
+        sha256 = "0pq191pvd4icp84sg0513pf5v7xm4nmldaagjd4p8ws75l656grw";
       };
     }
     {
