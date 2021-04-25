@@ -170,6 +170,15 @@ buildGoPackage rec {
     }
 
     {
+      goPackagePath = "golang.org/protobuf/encoding/prototext";
+      src = fetchgit {
+        url = "https://go.googlesource.com/protobuf";
+        rev = "v1.26.0";
+        sha256 = "095zyvjb0m2pz382500miqadhk7w3nis8z3j941z8cq4rdafijvi";
+      };
+    }
+    
+    {
       goPackagePath = "gopkg.in/urfave/cli.v1";
       src = fetchFromGitHub {
         owner = "urfave";
