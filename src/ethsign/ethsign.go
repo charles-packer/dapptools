@@ -16,7 +16,7 @@ import (
   "github.com/ethereum/go-ethereum/common/hexutil"
   "github.com/celo-org/celo-blockchain/accounts"
   "github.com/ethereum/go-ethereum/accounts/keystore"
-  "github.com/ethereum/go-ethereum/accounts/usbwallet"
+  "github.com/celo-org/celo-blockchain/accounts/usbwallet"
   "github.com/celo-org/celo-blockchain/core/types"
   "github.com/celo-org/celo-blockchain/crypto"
   "github.com/ethereum/go-ethereum/rlp"
