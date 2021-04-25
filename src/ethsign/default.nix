@@ -183,7 +183,7 @@ buildGoPackage rec {
         owner = "golang";
         repo = "crypto";
         rev = "83a5a9bb288b4c9523e182ed4f621411a11de3df";
-        sha256 = "1i4s7w05yppld2l1h1ky1pbs3c8l19y5hy49yczbzamflzdm6dml";
+        sha256 = "0ylbifzkcxfag5xq7dznj7s7np6x1qnyg88rnr76zh0s50lca87z";
       };
     }   
     {
