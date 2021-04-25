@@ -90,7 +90,7 @@ buildGoPackage rec {
       src = fetchFromGitHub {
         owner = "steakknife";
         repo = "bloomfilter";
-        rev = "1.0.2";
+        rev = "380d7f5085643867111b80fa50cb6057fdd2d012";
         sha256 = "0b2008xwzqn7fsy9pa437775nw5izgphndhilmy68rb56f83wd3g";
       };
     }
