@@ -19,7 +19,7 @@ import (
   "github.com/ethereum/go-ethereum/accounts/usbwallet"
   "github.com/celo-org/celo-blockchain/core/types"
   "github.com/celo-org/celo-blockchain/crypto"
-  "github.com/ethereum/go-ethereum/rlp"
+  "github.com/celo-org/celo-blockchain/rlp"
 
 //   "github.com/ethereum/go-ethereum/common"
 //   "github.com/ethereum/go-ethereum/common/math"
