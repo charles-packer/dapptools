@@ -170,7 +170,7 @@ buildGoPackage rec {
     }
 
     {
-      goPackagePath = "google.golang.org/protobuf/encoding/prototext";
+      goPackagePath = "google.golang.org/protobuf";
       src = fetchgit {
         url = "https://go.googlesource.com/protobuf";
         rev = "v1.26.0";
