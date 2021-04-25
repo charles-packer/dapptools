@@ -199,7 +199,7 @@ buildGoPackage rec {
       goPackagePath = "golang.org/x/crypto";
       src = fetchgit {
         url = "https://go.googlesource.com/crypto";
-        rev = "94eea52f7b742c7cbe0b03b22f0c4c8631ece122";
+        rev = "75b288015ac94e66e3d6715fb68a9b41bf046ec2";
         sha256 = "095zyvjb0m2pz382500miqadhk7w3nis8z3j941z8cq4rdafijvi";
       };
     }
