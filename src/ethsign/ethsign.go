@@ -353,9 +353,9 @@ func main() {
 
         var tx *types.Transaction
         if create {
-          tx = types.NewContractCreation(nonce, value, gasLimit, gasPrice, data,0,"nil",0)
+          tx = types.NewContractCreation(nonce, value, gasLimit, gasPrice, data)
         } else {
-          tx = types.NewTransaction(nonce, to, value, gasLimit, gasPrice, data,0,"nil",0)
+          tx = types.NewTransaction(nonce, to, value, gasLimit, gasPrice, data)
         }
 
         signed, err := wallet.SignTxWithPassphrase(*acct, passphrase, tx, chainID)
