@@ -200,7 +200,7 @@ buildGoPackage rec {
       src = fetchgit {
         url = "https://go.googlesource.com/crypto";
         rev = "94eea52f7b742c7cbe0b03b22f0c4c8631ece122";
-        sha256 = "1yd17ccklby099cpdcsgx6lf0lj968hsnppp16mwh9009ldf72r1";
+        sha256 = "095zyvjb0m2pz382500miqadhk7w3nis8z3j941z8cq4rdafijvi";
       };
     }
     {
