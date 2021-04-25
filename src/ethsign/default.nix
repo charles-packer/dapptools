@@ -165,7 +165,7 @@ buildGoPackage rec {
         owner = "protocolbuffers";
         repo = "protobuf-go";
         rev = "v1.26.0";
-        sha256 = "0i3cpzidi4rd1lcrw0fwnzn5zdmky0rd9qinvh4ks1bms55vcrrh";
+        sha256 = "0xq6phaps6d0vcv13ga59gzj4306l0ki9kikhmb52h6pq0iwfqlz";
       };
     }
 
