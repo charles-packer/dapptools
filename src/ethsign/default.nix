@@ -208,7 +208,7 @@ buildGoPackage rec {
       src = fetchgit {
         url = "https://go.googlesource.com/sys";
         rev = "53aa286056ef226755cd898109dbcdaba8ac0b81";
-        sha256 = "1yd17ccklby099cpdcsgx6lf0lj968hsnppp16mwh9009ldf72r1";
+        sha256 = "02882rwiykrrh4z2qga5pip8kh5cq3a1rlxqjc9p145gipgngg32";
       };
     }
   ];
