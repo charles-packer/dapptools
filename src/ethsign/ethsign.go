@@ -18,7 +18,7 @@ import (
   "github.com/ethereum/go-ethereum/accounts/keystore"
   "github.com/ethereum/go-ethereum/accounts/usbwallet"
   "github.com/celo-org/celo-blockchain/core/types"
-  "github.com/ethereum/go-ethereum/crypto"
+  "github.com/celo-org/celo-blockchain/crypto"
   "github.com/ethereum/go-ethereum/rlp"
 
   "os"
@@ -369,7 +369,7 @@ func main() {
         if create {
           tx = types.NewContractCreationEthCompatible(nonce, value, gasLimit, gasPrice, data)
         } else {
-          tx = types.NewTransactionEthCompatible(nonce, to, value, gasLimit, gasPrice, "0x88f24de331525cf6cfd7455eb96a9e4d49b7f292", "0xe7c7177b6e5418f27e435f96dbf3f7edae41c133", "0x0", data)
+          tx = types.NewTransactionEthCompatible(nonce, to, value, gasLimit, gasPrice, data)
         }
 
         signed, err := wallet.SignTxWithPassphrase(*acct, passphrase, tx, chainID)
