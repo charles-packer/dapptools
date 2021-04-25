@@ -174,7 +174,7 @@ buildGoPackage rec {
       src = fetchgit {
         url = "https://go.googlesource.com/protobuf";
         rev = "v1.26.0";
-        sha256 = "095zyvjb0m2pz382500miqadhk7w3nis8z3j941z8cq4rdafijvi";
+        sha256 = "0xq6phaps6d0vcv13ga59gzj4306l0ki9kikhmb52h6pq0iwfqlz";
       };
     }
     
