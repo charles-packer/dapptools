@@ -177,7 +177,15 @@ buildGoPackage rec {
         sha256 = "0xq6phaps6d0vcv13ga59gzj4306l0ki9kikhmb52h6pq0iwfqlz";
       };
     }
-    
+     {
+      goPackagePath = "github.com/golang/crypto";
+      src = fetchFromGitHub {
+        owner = "golang";
+        repo = "crypto";
+        rev = "83a5a9bb288b4c9523e182ed4f621411a11de3df";
+        sha256 = "1ny63c7bfwfrsp7vfkvb4i0xhq4v7yxqnwxa52y4xlfxs4r6v6fg";
+      };
+    }   
     {
       goPackagePath = "gopkg.in/urfave/cli.v1";
       src = fetchFromGitHub {
