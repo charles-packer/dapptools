@@ -1,6 +1,8 @@
 package main
 
 import (
+  "golang.org/x/crypto/sha3"
+
   "github.com/celo-org/celo-blockchain/common"
   "github.com/celo-org/celo-blockchain/common/math"
   "github.com/celo-org/celo-blockchain/common/hexutil"
@@ -41,7 +43,6 @@ import (
   "gopkg.in/urfave/cli.v1"
 
   "golang.org/x/crypto/ssh/terminal"
-  "golang.org/x/crypto/sha3"
 )
 
 // https://github.com/ethereum/go-ethereum/blob/55599ee95d4151a2502465e0afc7c47bd1acba77/internal/ethapi/api.go#L404
