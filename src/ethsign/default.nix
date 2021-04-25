@@ -85,15 +85,15 @@ buildGoPackage rec {
         sha256 = "1dc8sdca0nrqb8wri91mi2xcjm16wyawm4y0fwc5gp24ahjbrg7g";
       };
     }
-    # {
-    #   goPackagePath = "github.com/steakknife/bloomfilter";
-    #   src = fetchFromGitHub {
-    #     owner = "steakknife";
-    #     repo = "bloomfilter";
-    #     rev = "v0.0.0-20180922174646-6819c0d2a570";
-    #     sha256 = "13b0hsf4l08pbh96kkh88jznvpjbx3ab4mq60xfi0kz6v4abab7l";
-    #   };
-    # }
+    {
+      goPackagePath = "github.com/steakknife/bloomfilter";
+      src = fetchFromGitHub {
+        owner = "steakknife";
+        repo = "bloomfilter";
+        rev = "v0.0.0-20180922174646-6819c0d2a570";
+        sha256 = "13b0hsf4l08pbh96kkh88jznvpjbx3ab4mq60xfi0kz6v4abab7l";
+      };
+    }
     {
       goPackagePath = "github.com/steakknife/hamming";
       src = fetchFromGitHub {
