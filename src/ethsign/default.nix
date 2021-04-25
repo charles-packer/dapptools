@@ -86,12 +86,12 @@ buildGoPackage rec {
       };
     }
     {
-      goPackagePath = "github.com/steakknife/bloomfilter";
+      goPackagePath = "github.com/holiman/bloomfilter";
       src = fetchFromGitHub {
-        owner = "steakknife";
+        owner = "holiman";
         repo = "bloomfilter";
-        rev = "1.0.0";
-        sha256 = "108c69z5vf6j94kcgc758m4xhx64i8h44dc55jdmbhrn2j8plmrc";
+        rev = "2.0.3";
+        sha256 = "0v4z7x4dx7d0xzi7bwbl4iz36svckv4ljhbavqf6g8k9jldfhdbx";
       };
     }
     {
