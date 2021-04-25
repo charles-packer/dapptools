@@ -378,12 +378,12 @@ func main() {
 
         var tx *types.Transaction
         if create {
-        	tx = types.NewContractCreation(nonce, value, gasLimit, gasPrice, "0x88f24de331525cf6cfd7455eb96a9e4d49b7f292", "0xe7c7177b6e5418f27e435f96dbf3f7edae41c133",0, data)
+        	//tx = types.NewContractCreation(nonce, value, gasLimit, gasPrice, "0x88f24de331525cf6cfd7455eb96a9e4d49b7f292", "0xe7c7177b6e5418f27e435f96dbf3f7edae41c133",0, data)
 
-        	//tx = types.NewContractCreationEthCompatible(nonce, value, gasLimit, gasPrice, data)
+        	tx = types.NewContractCreationEthCompatible(nonce, value, gasLimit, gasPrice, data)
         } else {
-			tx = types.NewTransaction(nonce, to, value, gasLimit, gasPrice, "0x88f24de331525cf6cfd7455eb96a9e4d49b7f292", "0xe7c7177b6e5418f27e435f96dbf3f7edae41c133",0, data)
-        	//tx = types.NewTransactionEthCompatible(nonce, to, value, gasLimit, gasPrice, data)
+			//tx = types.NewTransaction(nonce, to, value, gasLimit, gasPrice, "0x88f24de331525cf6cfd7455eb96a9e4d49b7f292", "0xe7c7177b6e5418f27e435f96dbf3f7edae41c133",0, data)
+        	tx = types.NewTransactionEthCompatible(nonce, to, value, gasLimit, gasPrice, data)
         }
 
         signed, err := wallet.SignTxWithPassphrase(*acct, passphrase, tx, chainID)
