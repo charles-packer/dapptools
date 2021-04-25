@@ -1,7 +1,6 @@
 package main
 
 import (
-  "golang.org/x/crypto/sha3"
 
 //   "github.com/celo-org/celo-blockchain/common"
 //   "github.com/celo-org/celo-blockchain/common/math"
