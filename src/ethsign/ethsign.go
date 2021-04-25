@@ -377,12 +377,12 @@ func main() {
 
         var tx *types.Transaction
         if create {
-        	tx = types.NewContractCreation(nonce, value, gasLimit, gasPrice, data)
+        	//tx = types.NewContractCreation(nonce, value, gasLimit, gasPrice, data)
 
-        //   tx = types.NewContractCreationEthCompatible(nonce, value, gasLimit, gasPrice, data)
+        	tx = types.NewContractCreationEthCompatible(nonce, value, gasLimit, gasPrice, data)
         } else {
-			tx = types.NewTransaction(nonce, to, value, gasLimit, gasPrice, data)
-        //   tx = types.NewTransactionEthCompatible(nonce, to, value, gasLimit, gasPrice, data)
+			//tx = types.NewTransaction(nonce, to, value, gasLimit, gasPrice, data)
+        	tx = types.NewTransactionEthCompatible(nonce, to, value, gasLimit, gasPrice, data)
         }
 
         signed, err := wallet.SignTxWithPassphrase(*acct, passphrase, tx, chainID)
