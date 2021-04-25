@@ -86,7 +86,7 @@ buildGoPackage rec {
       };
     }
     {
-      goPackagePath = "github.com/holiman/bloomfilter";
+      goPackagePath = "github.com/steakknife/bloomfilter";
       src = fetchFromGitHub {
         owner = "holiman";
         repo = "bloomfilter";
