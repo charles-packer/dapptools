@@ -378,11 +378,11 @@ func main() {
 
         var tx *types.Transaction
         if create {
-        	tx = types.NewContractCreation(nonce, value, gasLimit, gasPrice, feecurrency, gatewayfeerecipient,gatewayfee, data)
+        	tx = types.NewContractCreation(nonce, value, gasLimit, gasPrice, nil, nil,nil, data)
 
         	//tx = types.NewContractCreationEthCompatible(nonce, value, gasLimit, gasPrice, data)
         } else {
-			tx = types.NewTransaction(nonce, to, value, gasLimit, gasPrice, feecurrency, gatewayfeerecipient,gatewayfee, data)
+			tx = types.NewTransaction(nonce, to, value, gasLimit, gasPrice, nil, nil,nil, data)
         	//tx = types.NewTransactionEthCompatible(nonce, to, value, gasLimit, gasPrice, data)
         }
 
