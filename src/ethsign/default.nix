@@ -18,7 +18,7 @@ buildGoPackage rec {
       src = fetchFromGitHub {
         owner = "celo-org";
         repo = "celo-blockchain";
-        rev = "v1.3.0";
+        rev = "v1.2.5";
         sha256 = "0lwli3rj91zvia4bb09s6cix4wimy5x7dk1qwl221k266x23h89l";
       };
     }
