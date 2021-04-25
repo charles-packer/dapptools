@@ -88,9 +88,9 @@ buildGoPackage rec {
     {
       goPackagePath = "github.com/steakknife/bloomfilter";
       src = fetchFromGitHub {
-        owner = "holiman";
+        owner = "steakknife";
         repo = "bloomfilter";
-        rev = "v2.0.3";
+        rev = "6819c0d2a57025e1700378ee59b7382d71987f14";
         sha256 = "16dlc7q0w99nsqjh1ibv54rmmdl2kisbh5z57j963zlwbg43byjz";
       };
     }
