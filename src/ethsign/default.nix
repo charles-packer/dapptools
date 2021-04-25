@@ -91,7 +91,7 @@ buildGoPackage rec {
         owner = "steakknife";
         repo = "bloomfilter";
         rev = "6819c0d2a57025e1700378ee59b7382d71987f14";
-        sha256 = "0blryvhs6ym1j42wbj4l6b526cgz0adx1wpbyb1ic79wwpvm7r88";
+        sha256 = "1dr4pb172rwi9cxvxl23j4j8q6ybqjfzll5dd14cd398f231nk81";
       };
     }
     {
