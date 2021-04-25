@@ -169,14 +169,14 @@ buildGoPackage rec {
       };
     }
 
-    {
-      goPackagePath = "google.golang.org/protobuf/encoding/prototext";
-      src = fetchgit {
-        url = "https://go.googlesource.com/protobuf";
-        rev = "v1.26.0";
-        sha256 = "0xq6phaps6d0vcv13ga59gzj4306l0ki9kikhmb52h6pq0iwfqlz";
-      };
-    }
+    # {
+    #   goPackagePath = "google.golang.org/protobuf/encoding/prototext";
+    #   src = fetchgit {
+    #     url = "https://go.googlesource.com/protobuf";
+    #     rev = "v1.26.0";
+    #     sha256 = "0xq6phaps6d0vcv13ga59gzj4306l0ki9kikhmb52h6pq0iwfqlz";
+    #   };
+    # }
     
     {
       goPackagePath = "gopkg.in/urfave/cli.v1";
