@@ -90,7 +90,7 @@ buildGoPackage rec {
       src = fetchFromGitHub {
         owner = "holiman";
         repo = "bloomfilter";
-        rev = "2.0.3";
+        rev = "v2.0.3";
         sha256 = "0v4z7x4dx7d0xzi7bwbl4iz36svckv4ljhbavqf6g8k9jldfhdbx";
       };
     }
