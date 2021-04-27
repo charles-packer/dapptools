@@ -37,7 +37,7 @@ esac
 path=${1?contractname}
 name=${path#*:}
 address=${2?contractaddress}
-constructorArguments=$(seth calldata "$4" "${@:5}")
+# constructorArguments=$(seth calldata "$4" "${@:5}")
 # constructorArguments=${constructorArguments#0x}
 # constructorArguments=${constructorArguments:8}
 
