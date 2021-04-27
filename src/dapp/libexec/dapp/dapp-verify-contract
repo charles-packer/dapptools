@@ -28,8 +28,10 @@ case "$chain" in
     export ETHERSCAN_URL=https://alfajores-blockscout.celo-testnet.org/api
     ;;
   *)
-    echo >&2 "Verification only works on mainnet, ropsten, kovan, rinkeby, and goerli."
-    exit 1
+    # echo >&2 "Verification only works on mainnet, ropsten, kovan, rinkeby, and goerli."
+    # exit 1
+    export ETHERSCAN_API_URL=https://alfajores-blockscout.celo-testnet.org/api
+    export ETHERSCAN_URL=https://alfajores-blockscout.celo-testnet.org/api
 esac
 
 path=${1?contractname}
