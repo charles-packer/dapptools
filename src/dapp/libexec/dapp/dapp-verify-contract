@@ -38,8 +38,8 @@ path=${1?contractname}
 name=${path#*:}
 address=${2?contractaddress}
 constructorArguments=$(seth calldata "$4" "${@:5}")
-constructorArguments=${constructorArguments#0x}
-constructorArguments=${constructorArguments:8}
+# constructorArguments=${constructorArguments#0x}
+# constructorArguments=${constructorArguments:8}
 
 meta=$(<"$DAPP_JSON" jshon -e contracts -e "$path" -e metadata -u)
 version=$(jshon <<<"$meta" -e compiler -e version -u)
