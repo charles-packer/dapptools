@@ -98,9 +98,9 @@ while [ $count -lt 5 ]; do
 
   response=$(curl -fsS "$ETHERSCAN_API_URL" -d "$query" \
   --data-urlencode "compilerversion=$version" \
-  --data-urlencode "contractSourceCode@"<(echo "$source") 
-#   --data-urlencode "constructorArguements=$constructorArguments" -X POST)
-
+  --data-urlencode "contractSourceCode@"<(echo "$source") \
+   -X POST)
+# --data-urlencode "constructorArguements=$constructorArguments"
   status=$(jshon <<<"$response" -e status -u)
   guid=$(jshon <<<"$response" -e result -u)
   message=$(jshon <<<"$response" -e message -u)
